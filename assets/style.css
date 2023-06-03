@@ -1,0 +1,323 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Exo 2", sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+  scroll-padding: 90px;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+  padding: 0px 20px 0px 20px;
+  position: relative;
+  top: 0;
+  margin: 0 auto;
+  z-index: 999999999;
+}
+
+.logo {
+  height: 100%;
+  align-items: center;
+}
+
+.navbar,
+.navbar-listado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    gap: 150px;
+}
+
+.navbar i{
+  font-size: 36px;
+  display: none;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.navbar-listado {
+    gap: 20px;
+}
+
+/* .navbar-listado a {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+} */
+
+/* .navbar-listado li:first-child > a {
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+} */
+
+body{
+  background-image: url(https://fondosmil.com/fondo/36833.jpg);
+  background-repeat: no-repeat;
+}
+
+main {
+  background-image: url(https://fondosmil.com/fondo/36833.jpg);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.hero {
+  padding: 90px;
+  max-width: 1200px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 60%;
+  padding-top: 95px;
+}
+
+.hero-info h1 {
+  padding: 20px;
+  font-size: 48px;
+  width: 80%;
+  min-width: 500px;
+  font-weight: 800;
+  background: rgb(0, 0, 0);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.hero-info p {
+  font-size: 20px;
+  width: 70%;
+  color:  rgb(0, 0, 0);
+  margin: 1rem;
+}
+
+.hero-info a {
+  color: rgb(5, 5, 5);
+  background-color: #ffffff;
+  width: 120px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  text-align: center;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.hero-card {
+  width: 600px;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#ventajas {
+  padding: 50px;
+  width: 100%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 800;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  align-items: center;
+  padding: 0px 30px;
+}
+
+.cards {
+  display: inline-block;
+  gap: 20px;
+  width: 400px;
+  height: 450px;
+  padding: 30px 20px;
+  align-items: center;
+  text-align: center;
+  background: #35657d;
+  border-radius: 10px;
+}
+
+.cards img{
+  height: 300px;
+  width: 350px;
+}
+
+.cards p {
+  font-size: 14px;
+  color: rgb(254, 255, 255);
+}
+
+.contact_form{  
+  width: 600px; 
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;  
+  padding-top: 20px;
+  padding-bottom: 20px;  
+  background-color: #fbfbfb; 
+  padding-left: 30px; 
+}
+
+input{
+  background-color: #fbfbfb; 
+  width: 408px; 
+  height: 40px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #ab4493; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+}
+
+textarea{
+  background-color: #fbfbfb; 
+  width: 405px; 
+  height: 80px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #ab4493; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+
+label{
+  display: block; 
+  float: center;  
+}
+
+button{
+  height: 45px; 
+  padding-left: 5px;
+  padding-right: 5px;   
+  margin-bottom: 20px; 
+  margin-top: 10px;   
+  text-transform: uppercase;
+  background-color: #ab4493; 
+  border-color: #ab4493; 
+  border-style: solid; 
+  border-radius: 10px;  
+  width: 420px;   
+  cursor: pointer;
+}
+
+span{
+  color: #ab4493; 
+}
+
+.aviso{
+  font-size: 13px;  
+  color: #0e0e0e;  
+}
+
+h2{
+  font-size: 30px;  
+  text-align: letf; 
+  padding-bottom: 20px; 
+  color: #080808;
+}
+
+h3{
+  font-size: 16px; 
+  padding-bottom: 30px;
+  color: #727070;   
+}
+
+p{
+  font-size: 14px; 
+  color: #0e0e0e; 
+}
+
+.contactUs {
+  max-width: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 50px;
+}
+
+.contactUs h2 {
+  font-size: 24px;
+  font-weight: 900px;
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.contactUs h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  display: flex;
+}
+
+.contactUs h4 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.footer {
+  padding: 2rem;
+  background: rgb(213, 255, 249);
+  color: rgb(132, 127, 127);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  width: 100%;
+  flex-direction:row;
+}
+
+.footer span{
+  font-size: 20px;
+  font-weight: 300px;
+}

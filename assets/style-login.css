@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Exo 2", sans-serif;
+}
+
+.overflow-auto {
+    overflow: auto;
+}
+
+header {
+    background-image: url(https://fondosmil.com/fondo/36833.jpg);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 0px 20px 0px 20px;
+    position: fixed;
+    top: 0;
+    margin: 0 auto;
+    z-index: 999999999;
+}
+
+.logo {
+    height: 100%;
+    align-items: center;
+}
+
+.navbar,
+.navbar-listado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    gap: 150px;
+}
+
+.navbar-listado {
+    gap: 20px;
+}
+
+.navbar-listado a {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.navbar-listado li:first-child > a {
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+}
+
+body{
+    background-image: url(https://fondosmil.com/fondo/36833.jpg);
+}
+
+#contenedor {
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+}
+
+#contenedorcentrado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:row;
+    width: 500px;
+    width: 70%;
+    background-color: #5c7f95;    
+    border-radius: 10px;    
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+#login {
+    width: 100%;
+    max-width: 320px;
+    min-width: 320px;
+    padding: 30px 30px 50px 30px;
+    background-color: #719192;
+    box-sizing: border-box;
+    opacity: 1;
+}
+
+#login input {
+    font-family: 'Overpass', sans-serif;
+    font-size: 110%;
+    color: #1b262c;
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 5px 5px 5px 10px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 3px;
+}
+
+#login button {
+    font-family: 'Overpass', sans-serif;
+    font-size: 110%;
+    color:#1b262c;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 3px 3px 3px 3px;
+    background-color: #dfcdc3;
+    margin-top: 10px;
+}
+
+#derecho {
+    text-align: center;
+    width: 100%;
+    padding:20px 20px 20px 50px;
+    box-sizing: border-box;
+}
+
+.titulo {
+    font-size: 300%;
+    color:#dfcdc3;
+    font-size: 50px;
+    margin: 2rem;
+}
+
+.form {
+    font-size: 90%;
+    text-align: center;    
+    margin-top: 15px;
+}
+
+.form a {
+    display: block;
+    color: #ffffff;
+    margin-bottom: 3px;
+}
+
+.footer {
+    margin: 0px;
+    padding: 2rem;
+    background: rgb(213, 255, 249);
+    color: rgb(132, 127, 127);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.footer span{
+    font-size: 20px;
+    font-weight: 300px;
+}
+
+/* #menu-toggle,
+.menu-label {
+    display: none;
+} */

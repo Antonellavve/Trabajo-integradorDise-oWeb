@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/responsive.css">
+    <link rel="stylesheet" href="./assets/style-login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Julee&family=Open+Sans:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body> 
+<header>
+    <img src="./assets/img/logo.jpg" alt="logo" width="100" height="100" class="logo">
+    <nav class="navbar">
+        <label for="menu-toggle" class="menu-label"><i class="fa-solid fa-bars"></i></label>
+        <input id="menu-toggle" type="checkbox" />
+            <ul class="navbar-listado">
+                <li><a href="#hero" class="navbar-link">Quienes Somos</a></li>
+                <li><a href="#ventajas" class="navbar-link">Servicios Prestados</a></li>
+                <li><a href="#contact_form" class="navbar-link">Ofrece tus servicios</a></li>
+                <li><a href="#contacto" class="navbar-link">Contactanos</a></li>
+                <li><a href="/register.html" class="navbar-link">Login</a></li>
+            </ul>
+    </nav>
+</header> 
+
+<main>
+        <section class="hero" id="hero">
+        <div class="hero-info" >
+            <h1>BIENVENIDOS</h1>
+            <p>Somos un grupo de profesionales destinados a ayudar en base a servicios basicos de la vida cotidiana de todas aquellas personas extranjeras que estan eligiendo Argentina como lugar para habitar.</p>
+            <a href="#contacto">Informate</a>
+        </div>
+        <div class="hero-card">
+            <img src="./assets/img/ayuda.jpg" alt="imagen-presentacion" width="600" height="400">
+        </div>
+    </section>
+
+    <section id="ventajas">
+        <h2>Razones para elegirnos</h2>
+        <div class="cards">
+            <img src="./assets/img/ayuda1.png" alt="ayuda1"/>
+            <p>Somos trabajadores que prestamos servicios a todos aquellos que lo necesiten: mujeres, hombres, niños.
+            Se trata de aquellos voluntarios, profesionales y personas afectadas que aún así prestan atención médica urgente, 
+            alojamiento, alimentos, protección, agua y mucho más.
+            </p>
+        </div>
+        <div class="cards">
+            <img src="./assets/img/ayuda2.jpg" alt="ayuda2"/>
+            <p> Por lo general, su accionar se da en medio de conflictos, desplazamientos, desastres y enfermedades. 
+            Tambien se busca tomar conciencia sobre la importancia de la cooperación 
+            tanto de personas como de organismos y Estados a nivel internacional
+            </p>
+        </div>
+        <div class="cards">
+            <img src="./assets/img/asistencia-humanitariajpg.webp" alt="asistencia"/>
+            <p>
+            Son organizaciones sin fines de lucro que buscan dar a respuestas a distintas causas de emergencia 
+            alrededor del mundo, es por este motivo que dejamos un formulario paar que completes si pensas que podes cooperar de 
+            alguna manera con nuestra organizacion.
+            </p>
+        </div>
+    </section>
+
+    <div class="contact_form" id="contact_form">
+        <div class="formulario">      
+            <h2>Formulario de contacto</h2>
+            <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+            <form action="submeter-formulario.php" method="post">       
+                <p>
+                    <label for="nombre" class="colocar_nombre">Nombre
+                    <span class="obligatorio">*</span>
+                    </label>
+                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                    </p>
+                    <p>
+                    <label for="email" class="colocar_email">Email
+                    <span class="obligatorio">*</span>
+                    </label>
+                    <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                    </p>
+                    <p>
+                    <label for="telefone" class="colocar_telefono">Teléfono
+                    </label>
+                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                    </p>   
+                    <p>
+                    <label for="mensaje" class="colocar_mensaje">Mensaje
+                    <span class="obligatorio">*</span>
+                    </label>                     
+                    <textarea rows="20" cols="30" name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                    </p>                    
+                    <button type="submit" name="enviar_formulario" id="enviar">Enviar</button>
+                    <p class="aviso">
+                    <span class="obligatorio"> * </span>los campos son obligatorios.
+                    </p>          
+                
+            </form>
+        </div>  
+    </div>
+
+    <div class="contactUs" id="contacto">
+        <h2>Contactanos</h2>
+        <h3>Antonella Velazquez</h3>
+        <h4>📌Dirección: Av. Illia n° 378</h4>
+        <h4>📞Whatsapp: +5492665281151</h4>
+        <h4>📧Email: antonellavvelazquez@gmail.com</h4>
+    <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3334.7199745293333!2d-66.34605638487464!3d-33.299988180817216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d439509ea633fb%3A0x9536117ece8692d!2sAv.%20Illia%20378%2C%20D5700AXF%20San%20Luis!5e0!3m2!1ses-419!2sar!4v1669139727447!5m2!1ses-419!2sar"
+    width="300"
+    height="200"
+    style="border: 0"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    </div>
+</main>
+
+<footer>
+    <div class="footer">
+        <span id="year">2023 </span
+        ><span> AntonellaVelazquez. All rights reserved.</span>
+    </div>
+</footer>
+</body>    
+</html>
