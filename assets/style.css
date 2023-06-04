@@ -16,61 +16,63 @@ html{
   overflow: auto;
 }
 
+body{
+  background-image: url(https://fondosmil.com/fondo/36833.jpg);
+  background-repeat: no-repeat;
+}
+
+/* HEADER */
+
+
 header {
+  background-image: url(https://fondosmil.com/fondo/36833.jpg);
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 85px;
-  padding: 0px 20px 0px 20px;
-  position: relative;
+  max-height: 126px;
+  padding: 0px 10px 0px 10px;
+  position: fixed;
   top: 0;
-  margin: 0 auto;
+  margin: 0;
   z-index: 999999999;
 }
 
 .logo {
   height: 100%;
   align-items: center;
+  justify-content: center;
+  padding: 0;
 }
 
 .navbar,
-.navbar-listado {
+.navbar-li {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .navbar {
     gap: 150px;
+    flex-direction: row;
+    width: 100%;
+    height: 120px;
 }
 
 .navbar i{
-  font-size: 36px;
+  font-size: 16px;
   display: none;
 }
 
-.menu-toggle {
-  display: none;
-}
-
-.navbar-listado {
+.navbar-li {
     gap: 20px;
+    flex-direction:row;
+    margin: 15px;
 }
 
-/* .navbar-listado a {
+.navbar-li a {
     color: rgb(255, 255, 255);
     font-size: 20px;
-} */
-
-/* .navbar-listado li:first-child > a {
-    color: rgb(255, 255, 255);
-    font-weight: 400;
-} */
-
-body{
-  background-image: url(https://fondosmil.com/fondo/36833.jpg);
-  background-repeat: no-repeat;
 }
 
 main {
@@ -84,7 +86,12 @@ main {
   width: 100%;
 }
 
+
+/* HERO */
+
+
 .hero {
+  margin-top: 10px;
   padding: 90px;
   max-width: 1200px;
   display: inline-flex;
@@ -144,8 +151,13 @@ main {
   gap: 20px;
 }
 
+
+/* CARDS */
+
+
 #ventajas {
-  padding: 50px;
+  margin: 10px;
+  padding: 90px;
   width: 100%;
   display: block;
   justify-content: center;
@@ -185,21 +197,23 @@ h2 {
   color: rgb(254, 255, 255);
 }
 
+
+/* FORMULARIO */
+
+
 .contact_form{  
-  width: 600px; 
-  height: auto;
-  margin: 80px auto;
-  border-radius: 10px;  
-  padding-top: 20px;
-  padding-bottom: 20px;  
+  width: 500px; 
+  height: 650px;
+  margin: 85px auto;
+  border-radius: 15px;  
+  padding: 10px;  
   background-color: #fbfbfb; 
-  padding-left: 30px; 
 }
 
 input{
   background-color: #fbfbfb; 
   width: 408px; 
-  height: 40px; 
+  height: 35px; 
   border-radius: 5px;  
   border-style: solid; 
   border-width: 1px; 
@@ -212,7 +226,7 @@ input{
 textarea{
   background-color: #fbfbfb; 
   width: 405px; 
-  height: 80px; 
+  height: 70px; 
   border-radius: 5px;  
   border-style: solid; 
   border-width: 1px; 
@@ -253,6 +267,7 @@ span{
 }
 
 h2{
+  margin-top: 20px;
   font-size: 30px;  
   text-align: letf; 
   padding-bottom: 20px; 
@@ -270,8 +285,14 @@ p{
   color: #0e0e0e; 
 }
 
+
+/* SECCION CONTACTO */
+
+
 .contactUs {
-  max-width: 900px;
+  background-image: url(https://fondosmil.com/fondo/36833.jpg);
+  background-position: 30%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -305,6 +326,11 @@ p{
   text-align: center;
 }
 
+
+
+/* FOOTER */
+
+
 .footer {
   padding: 2rem;
   background: rgb(213, 255, 249);
@@ -321,3 +347,44 @@ p{
   font-size: 20px;
   font-weight: 300px;
 }
+
+/* MENU HAMBURGUESA */
+
+.menu-label {
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.menu-label:before {
+  content: "\f0c9";  /* Código Unicode del ícono de barras sólidas */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #333;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 0;
+  visibility: hidden;
+}
+
+.menu-label .fa-bars:before {
+  content: "\f0c9";
+  display: none;
+}
+
+input[type="checkbox"] {
+  display: none;
+  visibility: hidden;
+}
+
+input[type="checkbox"]:checked ~ .menu-label:before {
+  content: "\f00d"; /* Código Unicode del ícono de cierre sólido */
+  /* Agrega cualquier otro estilo que desees para el ícono seleccionado */
+}
+
+#menu-label:checked ~ .navbar {
+  display: none;
+}
+
+/* Estilos adicionales para las secciones */

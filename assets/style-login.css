@@ -11,61 +11,63 @@
     overflow: auto;
 }
 
-header {
+.header-login{
     background-image: url(https://fondosmil.com/fondo/36833.jpg);
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 85px;
-    padding: 0px 20px 0px 20px;
+    max-height: 126px;
+    padding: 0px 10px 0px 10px;
     position: fixed;
     top: 0;
-    margin: 0 auto;
+    margin: 0;
     z-index: 999999999;
 }
 
-.logo {
+.logo-login {
     height: 100%;
     align-items: center;
+    justify-content: center;
+    padding: 0;
 }
 
-.navbar,
-.navbar-listado {
+.navbar-login,
+.navbar-li-login {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-.navbar {
-    gap: 150px;
+.navbar-login {
+    width: 100%;
+    height: 120px;
 }
 
-.navbar-listado {
+.navbar-li-login {
     gap: 20px;
+    align-items: center;
+    margin: 15px;
 }
 
-.navbar-listado a {
+.navbar-li-login a {
     color: #ffffff;
     font-size: 20px;
 }
 
-.navbar-listado li:first-child > a {
+.navbar-li-login li:first-child > a {
     color: rgb(255, 255, 255);
     font-weight: 400;
 }
 
-body{
-    background-image: url(https://fondosmil.com/fondo/36833.jpg);
-}
-
 #contenedor {
-    margin: 5px;
+    background-image: url(https://fondosmil.com/fondo/36833.jpg);
+    margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     min-width: 100vw;
-    min-height: 100vh;
+    min-height: 88vh;
     width: 100%;
     height: 100%;
 }
@@ -74,8 +76,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction:row;
-    width: 500px;
+    flex-direction: row;
     width: 70%;
     background-color: #5c7f95;    
     border-radius: 10px;    
@@ -129,8 +130,8 @@ body{
 .titulo {
     font-size: 300%;
     color:#dfcdc3;
-    font-size: 50px;
-    margin: 2rem;
+    font-size: 60px;
+    text-align: center;
 }
 
 .form {

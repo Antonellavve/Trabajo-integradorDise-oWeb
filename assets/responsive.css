@@ -2,43 +2,55 @@
     .navbar {
         gap: 10px;
         width: 100%;
+        display: flex;
     }
 
-    .navbar-listado {
+    .navbar ul{
         position: absolute;
-        top: 65px;
-        left: 5%;
+        top: 90px !important;
+        left: 35%;
         right: 5%;
-        width: 90%;
+        width: 50%;
         flex-direction: column;
-        background-color: var(--nav-bg);
-        border: 2px solid var(--electric);
-        border-top: 0px;
-        border-radius: 0px 0px 15px 15px;
-        align-items: flex-start;
+        background-color: rgb(195, 195, 237);
+        border: 2px solid;
+        border-radius: 15px 0px 15px 15px;
+        align-items: center;
         padding: 45px 30px;
         gap: 25px;
         z-index: 2;
         display: none;
+        margin: 30px;
     }
 
-    .navbar-listado a {
+    .navbar-li a {
         font-size: 18px;
+        color: black;
     }  
+
+    .navbar img{
+        padding: 0 0px;
+        width: 300px;
+        height: 150px;
+        padding-left: 56px;
+    }
 
     .menu-label {
         display: flex;
         order: 3;
         cursor: pointer;
+        padding-right: 10px;
     }
 
-    .menu-label img {
-        height: 20px;
-        width: 25px;
-    }
-
-    #menu-toggle:checked + .navbar-listado {
+    .menu-label:before{
+        visibility: visible;
         display: flex;
+        padding-right: 80px;
+    }
+
+    #menu-toggle:checked + .navbar-li {
+        display: flex;
+        visibility: visible;
     }
 
     body{
@@ -93,24 +105,40 @@
 }
 
 @media (max-width: 576px) {
-    .navbar ul{
-        background: red ;
+    .navbar{
         width: 100%;
-        height: calc(100vh - 85px);
+        display: flex;
+        position: relative;
+    }
+
+    .navbar ul{
         position: absolute;
-        top: 80px;
-        left: 0;
+        top: 90px;
+        left: 5%;
+        right: 5%;
+        width: 80%;
         flex-direction: column;
+        background-color: rgb(195, 195, 237);
+        border-radius: 15px 0px 15px 15px;
         align-items: center;
-        justify-content: center;
+        padding: 45px 30px;
+        gap: 25px;
+        z-index: 2;
         display: none;
     }
 
-    .navbar i{
-        display: block;
+    .navbar-li a{
+        color: rgb(0, 0, 0);
     }
 
-    #menu-toggle:checked ~ .navbar ul {
+    .menu-label:before{
+        visibility: visible;
+        display: flex;
+        margin: 0;
+        padding-right: 80px;
+    }
+
+    #menu-toggle:checked ~ .navbar ul{
         display: flex;
     }
 
@@ -121,8 +149,18 @@
         width: 100%;
     }
 
+    .hero-info{
+        width: 500px;
+    }
+
     .hero-info h1 {
         width: 100%;
+        font-size: 30px;
+    }
+
+    #ventajas{
+        margin: 0;
+        padding: 0;
     }
 
     .contact_form{
@@ -144,30 +182,84 @@
         width: 300px;
     }
 
+    .contactUs{
+        margin: 0;
+        padding: 0;
+    }
+
     .footer {
         width: 100%;
     }
 }
 
-@media (min-width: 320px){
+@media (min-width: 320px) and (max-width: 480px){
+    .navbar{
+        width: 100%;
+        display: flex;
+        position: relative;
+    }
+
+    .navbar ul{
+        position: absolute;
+        top: 90px;
+        left: 5%;
+        right: 5%;
+        width: 80%;
+        flex-direction: column;
+        background-color: rgb(195, 195, 237);
+        border-radius: 15px 0px 15px 15px;
+        align-items: center;
+        padding: 45px 30px;
+        gap: 25px;
+        z-index: 2;
+        display: none;
+    }
+
+    .navbar-li{
+        margin: 45px;
+    }
+
+    .navbar-li a {
+        font-size: 18px;
+        color: black;
+    }  
+
+    .navbar img{
+        padding: 0 0px;
+        width: 200px;
+        height: 100px;
+        padding-left: 56px !important;
+    }
+
+    .menu-label:before{
+        visibility: visible;
+        display: block;
+        padding-right: 20px;
+    }
+
     body {
         width: 100%;
-        display: block;
+        display: flex;
         text-align: center;
         justify-content: center;
         flex-direction: column;
+    }
+
+    .hero{
+        width: 500px;
     }
 
     .hero-info {
-        justify-content:center;
-        align-items: center;
         text-align: center;
         display: flex;
-        flex-direction: column;
+        width: 100%;
     }
 
-    .hero-info h1{
-        text-align: center;
-        justify-content: center;
+    .contact_form{
+        width: 350px;
+    }
+
+    .footer{
+    width: 100%;
     }
 }
